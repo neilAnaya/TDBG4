@@ -20,9 +20,11 @@ public class AuthService {
     }
     public Optional<UsuarioModel> getById(int id){ return  authRepository.findById(id);}
 
+    //crear usuario
     public UsuarioModel crearUsuario(UsuarioModel user){
         return authRepository.save(user);
         
     }
+//.....
 
 }
