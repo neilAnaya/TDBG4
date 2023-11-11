@@ -1,6 +1,7 @@
 package TDB.MsSeguridad.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,5 +18,6 @@ public class AuthService {
     public List<UsuarioModel> getAll() {
         return (List<UsuarioModel>) authRepository.findAll();
     }
+    public Optional<UsuarioModel> getById(int id){ return  authRepository.findById(id);}
 
 }
