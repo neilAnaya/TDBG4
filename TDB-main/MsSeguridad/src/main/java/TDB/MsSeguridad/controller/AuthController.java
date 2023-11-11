@@ -29,7 +29,7 @@ public class AuthController {
         @DeleteMapping("/eliminar/{id}")
     public ResponseEntity<UsuarioModel> deleteById(@PathVariable int id){
          authService.deleteById(id);
-         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+         return new ResponseEntity<>(HttpStatus.NO_CONTENT); //A
     }
 
 }
